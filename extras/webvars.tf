@@ -10,22 +10,12 @@ variable "aws_amis" {
 
 variable "public_key_path" {
   default = "~/.ssh/id_rsa.pub"
-  description = <<DESCRIPTION
-Path to the SSH public key to be used for authentication.
-Example: ~/.ssh/terraform.pub
-DESCRIPTION
 }
 
 variable "private_key_path" {
   default = "~/.ssh/id_rsa"
-  description = <<DESCRIPTION
-Path to the SSH private key to be used for authentication.
-Example: ~/.ssh/terraform
-DESCRIPTION
 }
 
 variable "key_name" {
-  default = "ap-default"
-  description = "Desired name of AWS key pair"
+  default = "default-key"
 }
-
